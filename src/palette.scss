@@ -1,0 +1,49 @@
+$amazon-palette: (
+ 50: #fff3e0,
+ 100: #ffe0b2,
+ 200: #ffcd80,
+ 300: #ffb84d,
+ 400: #ffa826,
+ 500: #ff9900,
+ 600: #fb8d00,
+ 700: #f57d00,
+ 800: #ef6d00,
+ 900: #e65200,
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: white,
+   400: white,
+   500: white,
+   600: white,
+   700: white,
+   800: white,
+   900: white,
+ )
+);
+
+$amazon-secondary-palette: (
+ 50: #ecedf0,
+ 100: #ced4d9,
+ 200: #aeb7c1,
+ 300: #8d9ba8,
+ 400: #758696,
+ 500: #5e7284,
+ 600: #516373,
+ 700: #42505d,
+ 800: #333e48,
+ 900: #222a31,
+ contrast: (
+   50: rgba(black, 0.87),
+   100: rgba(black, 0.87),
+   200: rgba(black, 0.87),
+   300: white,
+   400: white,
+   500: white,
+   600: white,
+   700: white,
+   800: white,
+   900: white,
+ )
+);
