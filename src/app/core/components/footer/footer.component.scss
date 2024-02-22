@@ -1,0 +1,40 @@
+:host {
+    .footer {
+        --mat-toolbar-title-text-size: .85rem;
+
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-basis: content;
+        height: fit-content;
+        padding: 35px 0;
+
+        &--column {
+            --mat-toolbar-title-text-size: 1.10rem;
+            --mat-toolbar-title-text-weight: 600;
+
+            h3 {
+                margin-bottom: 10px;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin-bottom: 5px;
+
+                    a {
+                        color: unset;
+                        text-decoration: none;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
