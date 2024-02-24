@@ -1,1 +1,8 @@
-<div *ngFor="let p of products$ | async">{{ p.title }}</div>
+<div *ngFor="let p of products$ | async">
+    <div class="productImg">
+        <img [src]="p.imgUrl">
+    </div>
+    <p class="description">{{ p.title }}</p>
+    <p class="price">{{ p.price | currency }}</p>
+    <button mat-raised-button color="accent" (click)="addProductCart(p.id)">Add</button>
+</div>
