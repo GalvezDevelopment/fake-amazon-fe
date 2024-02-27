@@ -1,1 +1,18 @@
-<p *ngFor="let p of products$ | async">{{ p.title }}</p>
+<div class="container">
+    <div *ngFor="let p of products$ | async" class="cart-product">
+        <div class="cart-product__title">
+            {{ p.title }}
+        </div>
+        <div class="cart-product__price">
+            ${{ p.price | number }}
+        </div>
+        <div class="cart-product__actions">
+            <button mat-icon-button (click)="remove(p.id)">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="actions">
+    <a mat-flat-button color="primary" routerLink="/cart/checkout">Checkout</a>
+</div>

@@ -3,7 +3,7 @@
         <div class="logo"></div>
     </a>
     <div class="spacer"></div>
-    <a routerLink="/cart">
+    <a routerLink="/cart" [matBadge]="productsCart$ | async" matBadgeSize="small">
         <div class="cart"></div>
     </a>
 </mat-toolbar>

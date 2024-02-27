@@ -10,7 +10,7 @@ export class ProductService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getProduct(pagination: number): Observable<Product[]> {
-    return this.httpClient.get<Product[]>('http://localhost:3000/products/');
+  getProduct(start: number, end: number): Observable<Product[]> {
+    return this.httpClient.get<Product[]>(`http://localhost:3000/products?start=${start}&end=${end}`);
   }
 }

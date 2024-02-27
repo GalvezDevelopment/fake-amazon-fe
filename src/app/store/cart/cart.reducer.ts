@@ -6,7 +6,8 @@ const initialState: Product[] = [];
 
 const reducer = createReducer(
     initialState,
-    on(CartActions.loaded, (state, { list }) => list)
+    on(CartActions.loaded, (state, { list }) => list),
+    on(CartActions.pay, () => [])
 );
 
 export { reducer as cartReducer };

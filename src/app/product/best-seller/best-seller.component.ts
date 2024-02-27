@@ -20,7 +20,7 @@ export class BestSellerComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.store.dispatch(ProductActions.load({ pagination: 50 }));
+    this.store.dispatch(ProductActions.load({ start: 0, end: 20 }));
   }
 
   addProductCart(productId: string): void {

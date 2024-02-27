@@ -21,4 +21,8 @@ export class ResumeComponent implements OnInit {
   ngOnInit(): void {
     this.store.dispatch(CartActions.load());
   }
+
+  remove(productId: string): void {
+    this.store.dispatch(CartActions.removeProduct({ productId }));
+  }
 }

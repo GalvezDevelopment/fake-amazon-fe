@@ -3,17 +3,25 @@ import { CommonModule } from '@angular/common';
 import { ResumeComponent } from './resume/resume.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { cartGuard } from './cart.guard';
 
 const routes: Routes = [
   {
     path: '',
-    component: ResumeComponent
+    component: ResumeComponent,
+  },
+  {
+    path: 'checkout',
+    component: CheckoutComponent,
+    canActivate: [cartGuard]
   }
 ];
 
 @NgModule({
   declarations: [
-    ResumeComponent
+    ResumeComponent,
+    CheckoutComponent
   ],
   imports: [
     CommonModule,

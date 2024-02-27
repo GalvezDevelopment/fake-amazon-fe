@@ -21,4 +21,8 @@ export class CartService {
   removeProduct(productId: string): Observable<void> {
     return this.httpClient.delete<void>('http://localhost:3000/cart/' + productId);
   }
+
+  pay(userId: string): Observable<void> {
+    return this.httpClient.post<void>('http://localhost:3000/cart/checkout', { userId });
+  }
 }
