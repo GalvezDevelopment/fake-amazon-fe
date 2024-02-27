@@ -1,0 +1,31 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .container {
+        flex-grow: 1;
+
+        .cart-product {
+            display: flex;
+            padding: 0 15px;
+    
+            & > div {
+                display: flex;
+                align-items: center;
+            }
+    
+            &__title {
+                flex-grow: 1;
+            }
+    
+            &__price, &__actions {
+                flex-basis: content;
+            }
+        }
+    }
+
+    .actions {
+        text-align: right;
+    }
+}
