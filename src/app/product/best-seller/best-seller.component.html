@@ -1,8 +1,8 @@
-<div *ngFor="let p of products$ | async">
-    <div class="productImg">
+<div class="product-item" *ngFor="let p of products$ | async">
+    <div class="product-item__img">
         <img [src]="p.imgUrl">
     </div>
-    <p class="description">{{ p.title }}</p>
-    <p class="price">{{ p.price | currency }}</p>
-    <button mat-raised-button color="accent" (click)="addProductCart(p.id)">Add</button>
+    <p class="product-item__desc">{{ p.title }}</p>
+    <p class="product-item__price">{{ p.price | currency }}</p>
+    <button id="add" mat-raised-button color="accent" (click)="addProductCart(p.id)">Add</button>
 </div>

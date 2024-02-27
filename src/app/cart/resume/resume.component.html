@@ -7,7 +7,7 @@
             ${{ p.price | number }}
         </div>
         <div class="cart-product__actions">
-            <button mat-icon-button (click)="remove(p.id)">
+            <button id="removeBtn" mat-icon-button (click)="remove(p.id)">
                 <mat-icon>delete</mat-icon>
             </button>
         </div>
